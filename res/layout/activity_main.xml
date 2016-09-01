@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_app"
+    tools:context="${relativePackage}.${activityClass}" >
+	<!-- <ImageView 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:scaleType="center"
+	    android:src="@drawable/ic_bg_app"/>  -->
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_menu_massager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_menu_massager"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_menu_massager_selected" />
+
+            <TextView
+                              android:id="@+id/tv_menu_massager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按摩"
+       android:textColor="@color/color_menu_selected"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_height="match_parent"
+   		 android:layout_width="1px"
+            android:background="@color/color_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                              android:id="@+id/iv_menu_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_menu_setting_normal" />
+
+            <TextView
+                              android:id="@+id/tv_menu_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="@color/color_menu_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+        android:layout_above="@id/bottom"
+        android:background="@color/color_divider"
+       />
+    <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/frame_fragment"
+        android:layout_above="@id/divider"
+        ></FrameLayout>
+
+</RelativeLayout>

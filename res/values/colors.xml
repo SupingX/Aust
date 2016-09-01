@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_divider">#22eeeeee</color>
+    <color name="color_menu_selected">#FF7200</color>
+    <color name="color_menu_normal">#A9B6BF</color>
+    <color name="color_text_time">#3FB5FD</color>
+    <color name="color_text_temp">#F67105</color>
+    
+    <color name="color_bg_app">#4B274B</color>
+	 <color name="color_blue">#037BFF</color>
+    <color name="color_pattern_bg_normal">#00000000</color>
+    <color name="color_pattern_bg_selected">#080715</color>
+    
+    <!-- 3FB5FF -->
+    
+    
+    
+    
+        
+        
+        
+        
+        
+</resources>

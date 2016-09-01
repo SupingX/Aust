@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#000"
+        android:gravity="center"
+        android:text="按摩"
+        android:textColor="@color/color_menu_normal"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <!--
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bg_circle" />
+        -->
+
+        <com.mycj.aust.view.ControlView
+            android:id="@+id/cv_time_and_temp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:text="时间设定"
+            android:textColor="@color/color_text_time"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:text="温度设定"
+            android:textColor="@color/color_text_temp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="力度调节"
+            android:textColor="@color/color_text_time"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/sb_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:max="20"
+            android:maxHeight="33dp"
+            android:minHeight="33dp"
+            android:progress="1"
+            android:progressDrawable="@drawable/ic_seekbar_power"
+            android:secondaryProgress="1"
+            android:thumb="@drawable/ic_btn_power"
+            android:thumbOffset="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="0"
+                android:textColor="@color/color_menu_selected"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="10"
+                android:textColor="@color/color_menu_selected"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="20"
+                android:textColor="@color/color_menu_selected"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <!--
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/ic_btn_power_length" />
+        -->
+    </LinearLayout>
+
+    <com.mycj.aust.view.MassagerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_pattern_anmo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pattern_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pattern_anmo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_pattern_anmo_normal" />
+
+            <TextView
+                android:id="@+id/tv_pattern_anmo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按摩"
+                android:textColor="@color/color_menu_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pattern_chuiji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pattern_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pattern_chuiji"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_pattern_chuiji_normal" />
+
+            <TextView
+                android:id="@+id/tv_pattern_chuiji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="锤击"
+                android:textColor="@color/color_menu_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pattern_zhenjiu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pattern_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pattern_zhenjiu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_pattern_zhenjiu_normal" />
+
+            <TextView
+                android:id="@+id/tv_pattern_zhenjiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="针灸"
+                android:textColor="@color/color_menu_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pattern_tuina"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pattern_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pattern_tuina"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_pattern_tuina_normal" />
+
+            <TextView
+                android:id="@+id/tv_pattern_tuina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推拿"
+                android:textColor="@color/color_menu_normal"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.mycj.aust.view.MassagerLayout>
+
+</LinearLayout>

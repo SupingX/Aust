@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bg_loading_dialog"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="连接超时"
+        android:textStyle="bold"
+        android:textColor="@color/color_blue"
+        android:textSize="16sp" />
+
+    <com.mycj.aust.view.FreshCircleView
+        android:visibility="gone"
+        android:id="@+id/fcv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center" />
+    <ImageView 
+        android:id="@+id/iv_loading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_loading"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>

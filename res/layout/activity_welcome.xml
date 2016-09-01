@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_app"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按摩器"
+        android:textSize="26sp" 
+        android:textColor="@color/color_text_temp"
+        android:layout_centerInParent="true"
+        />
+    
+      <TextView
+          
+          android:id="@+id/tv_version"
+          android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" 
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
