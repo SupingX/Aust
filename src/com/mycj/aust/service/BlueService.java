@@ -323,20 +323,20 @@ public class BlueService extends Service {
 			ProtocolBroadcast broadcast = new ProtocolBroadcast(getApplicationContext()){
 				@Override
 				public void sendBroadcastForPower(int power) {
-					super.sendBroadcastForPower(power*2);
+					super.sendBroadcastForPower(power);
 				}
 
 				@Override
 				public void sendBroadcastForChangePowerCallBack(int status,
 						int power) {
-					super.sendBroadcastForChangePowerCallBack(status, power*2);
+					super.sendBroadcastForChangePowerCallBack(status, power);
 				}
 
 				@Override
 				public void sendBroadcastForCurrentMassagerInfo(
 						MycjMassagerInfo info) {
 					int power= info.getPower();
-					info.setPower(2*power);
+					info.setPower(power);
 					super.sendBroadcastForCurrentMassagerInfo(info);
 				}
 				

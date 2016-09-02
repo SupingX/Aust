@@ -213,7 +213,7 @@ public class MassagerFragment extends BaseFragment{
 				if (isMassagerStarting()) {
 					
 					// 修改处5 edit_power * 2
-				writeProtocol(write.writeForChangePower(seekBar.getProgress()/2));
+				writeProtocol(write.writeForChangePower(seekBar.getProgress()));
 				if (mOnMassagerFragmentListener != null) {
 					mOnMassagerFragmentListener.showLoading("设置力度中...");
 				}
@@ -287,7 +287,7 @@ public class MassagerFragment extends BaseFragment{
 				if (massagerInfo == null) {
 					
 					// 修改处4 edit_power * 2
-					int power = sbPower.getProgress()/2 ;
+					int power = sbPower.getProgress() ;
 					
 					int leftTime = cvTimeAndTemp.getTime() * 60;
 					int settingTime = leftTime;
